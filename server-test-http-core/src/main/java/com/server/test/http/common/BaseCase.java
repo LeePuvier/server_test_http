@@ -12,13 +12,13 @@ import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 @SpringBootTest(
         classes = com.wecash.rh.broodmother.spawnspider.base.Starter.class,
         properties = {
-                "app.id=capital-order",
-                "apollo.meta=http://meta-tapollo01cn-01.svc.wecash.net:8080",
+                "app.id=demo-test",
+                "apollo.meta=http://127.0.0.1:8080",
                 "env=FAT",
-                "-Dserver.port=1100",
+                "-Dserver.port=8081",
                 "apollo.bootstrap.enabled=true",
                 "apollo.bootstrap.eagerLoad.enabled=true",
-                "apollo.bootstrap.namespaces=application,capital.base.testing11",
+                "apollo.bootstrap.namespaces=application",
                 "eureka.client.register-with-eureka=false"
         }
 )
